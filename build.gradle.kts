@@ -4,7 +4,7 @@ plugins {
     id("java")
 }
 
-group = "com.instancify.scriptify.declaration"
+group = "org.densy.scriptify.declaration"
 version = "1.0.1-SNAPSHOT"
 
 java {
@@ -15,11 +15,11 @@ java {
 
 repositories {
     mavenCentral()
-    maven("https://repo.instancify.app/snapshots")
+    maven("https://repo.densy.org/snapshots")
 }
 
 dependencies {
-    api("com.instancify.scriptify:api:1.4.2-SNAPSHOT")
+    api("org.densy.scriptify:api:1.5.0-SNAPSHOT")
     compileOnlyApi("org.projectlombok:lombok:1.18.36")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
 }
@@ -35,8 +35,8 @@ publishing {
     }
     repositories {
         maven {
-            name = "instancify"
-            url = uri("https://repo.instancify.app/snapshots")
+            name = "densy"
+            url = uri("https://repo.densy.org/snapshots")
             credentials {
                 username = System.getenv("MAVEN_USERNAME")
                 password = System.getenv("MAVEN_PASSWORD")
