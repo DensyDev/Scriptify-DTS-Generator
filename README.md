@@ -18,12 +18,12 @@ generator.generate(Path.of("code"), ScriptTsProjectGenerator.TYPESCRIPT);
 ```
 
 ## Maven
-Adding repo:
+Adding repository:
 ```xml
 <repositories>
     <repository>
-        <id>instancify-repository-snapshots</id>
-        <url>https://repo.instancify.app/snapshots</url>
+        <id>densy-repository-snapshots</id>
+        <url>https://repo.densy.org/snapshots</url>
     </repository>
 </repositories>
 ```
@@ -31,22 +31,22 @@ Adding repo:
 Adding dependency:
 ```xml
 <dependency>
-    <groupId>com.instancify.scriptify.declaration</groupId>
+    <groupId>org.densy.scriptify.declaration</groupId>
     <artifactId>generator</artifactId>
     <version>1.0.1-SNAPSHOT</version>
 </dependency>
 ```
 
 ## Gradle
-Adding repo:
+Adding repository:
 ```groovy
 maven {
-    name "instancifyRepositorySnapshots"
-    url "https://repo.instancify.app/snapshots"
+    name "densyRepositorySnapshots"
+    url "https://repo.densy.org/snapshots"
 }
 ```
 
 Adding dependency:
 ```groovy
-implementation "com.instancify.scriptify.declaration:generator:1.0.1-SNAPSHOT"
+implementation "org.densy.scriptify.declaration:generator:1.0.1-SNAPSHOT"
 ```

@@ -1,6 +1,6 @@
-package com.instancify.scriptify.declaration;
+package org.densy.scriptify.declaration;
 
-import com.instancify.scriptify.api.script.Script;
+import org.densy.scriptify.api.script.Script;
 
 import java.io.IOException;
 import java.nio.file.Files;
